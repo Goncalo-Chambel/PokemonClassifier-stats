@@ -69,8 +69,6 @@ for sample in random_normal_samples:
 for sample in random_legendary_samples:
     legendary_test_names.append(sample['name'])
 
-print(legendary_test_names)
-
 X_train = []
 Y_train = []
 X_test = []
@@ -112,6 +110,13 @@ for pokemon in Y_legendary:
 
 X_train, Y_train = shuffle(X_train, Y_train)
 
+'''
+# Saving training and testing files
+np.savetxt("Processed Data\X_train.txt", X_train)
+np.savetxt("Processed Data\X_test.txt", X_test)
+np.savetxt("Processed Data\Y_train.txt", Y_train)
+np.savetxt("Processed Data\Y_test.txt", Y_test)
+'''
 # -------------------------------------------------------------------------------- #
 
 # Creating the neural network
