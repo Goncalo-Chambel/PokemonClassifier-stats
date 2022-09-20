@@ -13,7 +13,7 @@ pd.set_option("display.max_colwidth", None)
 
 data = pd.read_csv('data.csv')
 
-data = data[['pokedex_number', 'name', 'status', 'height_m', 'weight_kg', 'total_points', 'hp', 'attack', 'defense',
+data = data[['pokedex_number', 'name', 'status', 'height_m', 'weight_kg', 'hp', 'attack', 'defense',
              'sp_attack', 'sp_defense', 'speed']]
 
 
